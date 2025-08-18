@@ -1,0 +1,128 @@
+[
+    {
+        "key": "ctrl+alt+\\",
+        "command": "workbench.action.editorDictation.start",
+        "when": "hasSpeechProvider && !editorReadonly && !speechToTextInProgress"
+    },
+    {
+        "key": "ctrl+alt+v",
+        "command": "-workbench.action.editorDictation.start",
+        "when": "hasSpeechProvider && !editorReadonly && !speechToTextInProgress"
+    },
+    {
+        "key": "scrolllock",
+        "command": "toggleVim"
+    },
+    {
+        "key": "ctrl+alt+r",
+        "command": "workbench.files.action.showActiveFileInExplorer"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-notebook.addFindMatchToSelection",
+        "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-list.focusPageDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-list.focusPageUp",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+u",
+        "command": "-editor.action.removeCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+u",
+        "command": "-workbench.action.output.toggleOutput",
+        "when": "workbench.panel.output.active"
+    },
+    {
+        "key": "ctrl+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.action.previousMatchFindAction",
+        "when": "editorFocus && findInputFocussed"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused && !inlineChatFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !inlineChatFocused && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !inlineChatFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0 || notebookCellListFocused && !inlineChatFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelSourceCount > 0"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused && !interactiveEditorFocused && notebookCellType == 'code' || editorTextFocus && inputFocus && notebookEditorFocused && !interactiveEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-workbench.action.terminal.findNext",
+        "when": "terminalFindInputFocused && terminalHasBeenCreated || terminalFindInputFocused && terminalProcessSupported"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-acceptAlternativeSelectedSuggestion",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.action.extensioneditor.findPrevious",
+        "when": "webviewFindWidgetFocused && !editorFocus && activeEditor == 'workbench.editor.extension'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.action.webvieweditor.findPrevious",
+        "when": "webviewFindWidgetFocused && !editorFocus && activeEditor == 'WebviewEditor'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.refocusCallHierarchy",
+        "when": "callHierarchyVisible"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.refocusTypeHierarchy",
+        "when": "typeHierarchyVisible"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-interactive.execute",
+        "when": "config.interactiveWindow.executeWithShiftEnter && isCompositeNotebook && activeEditor == 'workbench.editor.interactive'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-repl.execute",
+        "when": "config.interactiveWindow.executeWithShiftEnter && isCompositeNotebook && !notebookCellListFocused && activeEditor == 'workbench.editor.repl'"
+    },
+    {
+        "key": "ctrl+alt+win+f",
+        "command": "explorer.newFolder"
+    }
+]

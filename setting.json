@@ -1,0 +1,52 @@
+{
+    "vim.useCtrlKeys": false,
+    "vim.vimrc.path": "D:\\vim\\init.vimrc",
+    "vim.leader": "<space>",
+    "editor.lineNumbers": "relative",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<space>"
+            ],
+            "commands": []
+        },
+        {
+            "before": [
+                "<leader>",
+                "r",
+                "n"
+            ],
+            "commands": [
+                "workbench.files.action.showActiveFileInExplorer",
+                "renameFile"
+            ]
+        }
+    ],
+    "vim.vimrc.enable": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.visualstar": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.handleKeys": {
+        "<C-u>": true,
+        "<C-d>": true,
+        "<Tab>": true,
+        "<S-Tab>": true,
+    },
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "underline",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.cursorStylePerMode.visualblock": "block",
+    "vim.cursorStylePerMode.visualline": "block"
+}
