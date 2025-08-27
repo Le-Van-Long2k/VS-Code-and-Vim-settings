@@ -9,13 +9,6 @@ nnoremap K 5kzz
 nnoremap > $
 nnoremap < 0
 
-" ===== Visual mode mappings =====
-
-nnoremap <leader>d yyp
-vnoremap <leader>y "+y
-nnoremap <leader>Y "+Y
-nnoremap <leader>p "+p
-
 " replace this word
 nnoremap rw :%s/\<<C-r><C-w>\>//g<Left><Left>
 
@@ -37,3 +30,7 @@ nnoremap cil cc
 
 xnoremap i <Esc>i
 xnoremap a <Esc>a
+
+" quick change insert mode
+nnoremap , a,
+nnoremap <Space> a
